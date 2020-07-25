@@ -138,6 +138,8 @@ function addNewTask(taskDescription, animate) {
     var dropId;
     label.addEventListener("drop", function (ev) {
 
+        // This is needed for Firefox or else we get problems (window redirection to element name)
+        event.preventDefault();
         // Get source ID
         var data = ev.dataTransfer.getData("text");
 

@@ -42,7 +42,9 @@ img {
 form {
     font-family: 'Oswald', sans-serif;
 }
-
+small {
+    font-family: 'Oswald', serif;
+}
 
 .container {
     width: 100%;
