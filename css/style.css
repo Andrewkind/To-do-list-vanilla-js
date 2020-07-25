@@ -19,9 +19,23 @@ img {
     max-width: 40px;
 }
 
+.bear-small {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    border-bottom:0px solid #555;
+    cursor: pointer;
+
+}
+
+.bear-left {
+    padding-left: 10px;
+}
+
 form {
     font-family: 'Oswald', sans-serif;
 }
+
 
 .container {
     width: 100%;
@@ -77,10 +91,8 @@ nav {
     font-family: 'Anton', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 8.5px;
+    letter-spacing: 11.5px;
 
-    margin-bottom: 2px;
-    margin-top: 2px;
     font-size: 40px;
     padding: 1rem;
 }
@@ -113,13 +125,6 @@ nav a {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
  /*   transition: 0.3s all ease-in-out; */
-}
-
-nav label {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    /*transition: 0.3s all ease-in-out; */
 }
 
 nav a:hover {
@@ -165,6 +170,7 @@ nav a:hover {
 
 li {
     padding-bottom: 10px;
+    min-width: 700px; /*make LI's not too centered*/
 }
 
 .burger-menu {
@@ -242,10 +248,25 @@ input[type=text] {
     box-sizing: border-box;
 }
 
-.label, h1, label, li {
+.label, label {
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 3.5px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+ /*   transition: 0.3s all ease-in-out; */
+}
+.label-li {
+    margin-left: 15px;
+
+}
+.li {
+    font-family: 'Oswald', sans-serif;
+
     padding: 10px 0;
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 48px;
     font-weight: 300;
     letter-spacing: 3.5px;
     text-decoration: none;
@@ -257,8 +278,13 @@ li {
     line-height: 120%;
 }
 
-.current-label {
-    font-size: 38px;
+.main-label {
+    font-size: 28px;
+}
+
+.img-list {
+    vertical-align: middle;
+
 }
 
 /*
@@ -270,20 +296,15 @@ source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 input[type="checkbox"] {
     vertical-align: middle;
 
-    border: solid white;
-    border-width: 0 3px 3px 0;
-
     transition: 1s;
   }
   /* Style the checkmark/indicator */
   input[type="checkbox"]:checked {
 
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    transition: 1s;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+    transition: 0.5s;
   }
 /* end of checkbox */ 
 
@@ -298,6 +319,11 @@ form {
 /* 1025 pixel screen or less do this: */
 
 @media only screen and (max-width: 1025px) {
+
+    label {
+        font-size: 28px;
+    }
+
     .burger-menu {
         display: inline-block;
     }
@@ -316,9 +342,7 @@ form {
     .bear {
         max-width: 120px;
     }
-    .label {
-        font-size: 60px;
-    }
+
     .button {
         width: 50%;
         height: 100px;
@@ -327,7 +351,8 @@ form {
         margin-bottom: 50px;
     }
     input {
-       /* height: 100px; */
+        height: 100px; 
+        font-size: 44px;
       
     }
 
@@ -343,6 +368,12 @@ form {
     nav {
         margin-top: 10px;
     }
+
+    .main-label {
+        font-size: 58px;
+    }
+
+    
     /* 
     If we clicked on our hamburger, our hidden checkbox is checked. 
 
@@ -425,6 +456,7 @@ form {
         letter-spacing: 0px;
         font-size: 60px;
     }
+
     .bear {
         max-width: 60px;
     }
@@ -488,15 +520,25 @@ li label{
 input[type='checkbox'] {
     width:30px;
     height:30px;
-    background:white;
-    border-radius:5px;
-    border:2px solid #555;
 }
 input[type='checkbox']:checked {
-    background: #abd;
+    background: rgb(170, 221, 191);
 }
 
+/* Shrink margin for nice setup */
 #checkboxes {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+
+
+/* source: https://css-tricks.com/examples/hrs/
+Gradient transparent - color - transparent */
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }

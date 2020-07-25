@@ -15,15 +15,23 @@ form {
     color: white;
 }
 
+body {
+        background-color: var(--dark-blue);
+
+}
+
 .container {
     background-color: var(--dark-blue);
-    border-bottom-color: #829FD9;
+    border-bottom-color: #6598ff;
 }
 
 nav a {
     color: white;
 }
 
+.bear-edit {
+    background-color: white;
+}
 nav label {
     color: white;
 }
@@ -74,15 +82,6 @@ input[type=text] {
 
 
 /* 1025 pixel screen or less do this: */
-
-@media only screen and (max-width: 1025px) {
-    body {
-        background-color: blanchedalmond;
-    }
-
-
-
-}
 
 
 /* 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/color-black.css">
     <link rel="stylesheet" href="css/tooltip.css">
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js" defer></script>
     <title>Bark It!</title>
     <link rel="icon" href="media/bear-left.png">
 
@@ -24,7 +24,7 @@
                 <img class="hamburger" src="media/menu.png" alt="">
             </label>
             <div class="left-menu menu">
-                <img style="padding-left: 10px;" class="bear active" src="media/bear-left.png" alt="">
+                <img class="bear active bear-left" src="media/bear-left.png" alt="">
 
                 <a href="#">Bark?</a>
                 <a href="#">Bark!</a>
@@ -32,7 +32,7 @@
             </div>
 
 
-            <a href="#" class="logo">BARK IT
+            <a href="index.html" class="logo">BARK IT
 
 
                 <img class="bear active" id="bear-mid" src="media/bear.png" alt="">
@@ -55,37 +55,52 @@
 
         <nav>
             <div></div>
-            <label class="label" for="task-input">New Task: </label>
+            <label class="main-label" for="task-input">New Bark </label>
             <div></div>
         </nav>
         <form class="container tasks">
             <nav class="input-nav">
                 <div></div>
-                <input type="text" placeholder="New Task Description" id="task-input" name="task-input">
+                <input type="text" placeholder="Write your BARK down!" id="task-input" name="task-input">
                 <div></div>
             </nav>
 
-            <button class="button button1" id="add-button" onclick="taskInputClick()">Add New Task</button>
+            <button class="button button1" id="add-button">Add New Bark</button>
         </form>
 
+        <hr>
+        <!--Current Barks-->
 
 
-        <label class="current-label">Current Barks</label>
+
+        <label class="main-label">Current Barks     
+                <img class="bear img-list" id="bear-mid" src="media/list-current.png" alt="">
+        </label>
 
 
         <div id="checkboxes">
-            <ul>
-                <li><input id="a1" type="checkbox"> <label for="a1">Dig up bone.</li>
-                <li><input id="a2" type="checkbox"> <label for="a2">Eat the cat's food.</li>
-                <li><input id="a3" type="checkbox"> <label for="a3">Sniff Pierre's behind.</li>
-                <li><input id="a4" type="checkbox"> <label for="a4">Organize toys.</li>
-                <li><input id="a5" type="checkbox"> <label for="a5">Investigate if tail is friend of foe.</li>
-                <li><input id="a6" type="checkbox"> <label for="a6">Nap.</li>
-                <li><input id="a7" type="checkbox"> <label for="a7">Get the mutts together for a game of Texas Hold 'Em</li>
+            <ul id="current-list">
+
             </ul>
+
         </div>
+        <hr>
+        <!--Completed Barks-->
+
+        <label class="main-label completed-label">Completed Barks
+            <img class="bear img-list" id="bear-mid" src="media/list-done.png" alt="">
+
+        </label>
 
 
+        <div id="checkboxes">
+            <ul id="complete-list">
+              
+
+            </ul>
+
+        </div>
+        <!-- end of Compelted Barks-->
     </div>
 
 

@@ -10,32 +10,34 @@ source: https://stackoverflow.com/questions/45384456/using-variables-for-a-hex-c
 
     /*
     --black: #0D0D0D;
-    --red: #D93030;
+    --aqua: #D93030;
     --orange: #F27405;
-    --yellow: #D9A404;
-    --pink: #BF3073;
+    --offwhite: #D9A404;
+    --red: #BF3073;
 */
 
 /*
 https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
 */
+
     --black: #011627;
-    --red: #2ec4b6;
+    --aqua: #2ec4b6;
     --orange: #ff9f1c;
-    --yellow: #fdfffc;
-    --pink: #e71d36;
+    --offwhite: #fdfffc;
+    --red: #e71d36;
   }
 
 
 
 
+
 form {
-    color: var(--pink);
+    color: var(--red);
 }
 
 .container {
     background-color: var(--white);
-    border-bottom-color: var(--pink);
+    border-bottom-color: var(--red);
 }
 
 nav a {
@@ -51,9 +53,9 @@ nav label {
 }
 
 .button1 {
-    background-color: var(--yellow);
+    background-color: var(--offwhite);
     color: var(--black);
-    border-color: var(--pink);
+    border-color: var(--red);
 }
 
 .button1:hover {
@@ -61,7 +63,7 @@ nav label {
 }
 
 input[type=text] {
-    border-color: var(--pink);
+    border-color: var(--red);
 }
 
 .label, h1, label {
@@ -87,9 +89,13 @@ input[type=text] {
 /* Style the checkmark/indicator */
 
 .container .checkmark:after {
-    border-color: var(--yellow);
+    border-color: var(--offwhite);
 }
 
+hr {
+    background-image: linear-gradient(to right,var(--white),var(--red), var(--white));
+
+}
 
 /* 1025 pixel screen or less do this: */
 
