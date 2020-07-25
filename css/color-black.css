@@ -1,0 +1,92 @@
+/* Use variables in css
+source: https://stackoverflow.com/questions/45384456/using-variables-for-a-hex-color
+*/
+:root {
+    --main-color: #06c;
+    --accent-color: #006;
+    --dark-blue: #3E38F2;
+    --white: #ffffff;
+    --purple: #551a8b;
+
+    --black: #0D0D0D;
+    --red: #D93030;
+    --orange: #F27405;
+    --yellow: #D9A404;
+    --pink: #BF3073;
+  }
+
+
+
+
+form {
+    color: var(--pink);
+}
+
+.nav-container {
+    background-color: var(--white);
+    border-bottom-color: var(--pink);
+}
+
+nav a {
+    color: var(--black);
+}
+
+nav label {
+    color: var(--black);
+}
+
+.tasks {
+    border-color: var(--white);
+}
+
+.button1 {
+    background-color: var(--white);
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
+.button1:hover {
+    background-color: var(--white);
+}
+
+input[type=text] {
+    border-color: var(--pink);
+}
+
+.label, h1, label {
+    color: var(--black);
+}
+
+.checkmark {
+    background-color: var(--pink);
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: var(--pink);
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: var(--red);
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    border-color: white;
+}
+
+
+/* 1025 pixel screen or less do this: */
+
+@media only screen and (max-width: 1025px) {
+    body {
+        background-color: var(--white);
+    }
+
+
+
+}

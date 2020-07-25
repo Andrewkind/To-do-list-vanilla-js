@@ -1,0 +1,82 @@
+:root {
+    --main-color: #06c;
+    --accent-color: #006;
+    --dark-blue: #3E38F2;
+    --off-white: #f0f0f0;
+  }
+
+
+
+
+form {
+    color: white;
+}
+
+.nav-container {
+    background-color: var(--dark-blue);
+    border-bottom-color: #230A59;
+}
+
+nav a {
+    color: white;
+}
+
+nav label {
+    color: white;
+}
+
+.tasks {
+    border-color: #829FD9;
+}
+
+.button1 {
+    background-color: #3E38F2;
+    color: white;
+    border-color: #829FD9;
+}
+
+.button1:hover {
+    background-color: #230A59;
+}
+
+input[type=text] {
+    border-color: #ccc;
+}
+
+.label, h1, label {
+    color: white;
+}
+
+.checkmark {
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    border-color: white;
+}
+
+
+/* 1025 pixel screen or less do this: */
+
+@media only screen and (max-width: 1025px) {
+    body {
+        background-color: blanchedalmond;
+    }
+
+
+
+}

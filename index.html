@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <!-- Add Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color-black.css">
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- Add Grid -->
+
+    <div class="nav-container">
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="burger-menu">
+                <img class="hamburger" src="img/hamburger.png" alt="">
+            </label>
+            <div class="left-menu menu">
+                <img style="padding-left: 10px;" class="bear active" src="img/bear-left.png" alt="">
+
+                <a href="#">Bark?</a>
+                <a href="#">Bark!</a>
+                <a href="#">Bark..</a>
+            </div>
+
+
+            <a href="#" class="logo">BARK IT
+
+                <img class="bear active" src="img/bear.png" alt="">
+            </a>
+
+
+            <div class="right-menu menu">
+                <img class="bear right active" src="img/bear-right.png" alt="">
+                 <!--   <a href="#">About</a> -->
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Item list -->
+    <div class="nav-container tasks">
+
+        <nav>
+            <div></div>
+        <label class="label" for="task-input">New Task: </label>
+        <div></div>
+        </nav>
+
+        <nav class="input-nav">
+            <div></div>
+            <input type="text" placeholder="New Task Description" id="task-input" name="task-input">
+        <div></div>
+    </nav>
+
+    <button class="button button1" id="add-button" onclick="taskInputClick()">Add New Task</button>
+
+    
+        <nav>
+
+   
+
+
+            <h1>Current Activities</h1>
+            <label class="container">One
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Two
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Three
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Four
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+
+
+
+
+<!--
+            <ul>
+                <li>
+                    <form>
+                        <label class="label" for="task-input">New Task:</label>
+                        <input type="text" id="task-input" name="task-input">
+                        <button class="button button1" onclick="taskInputClick()">Add New Task</button>
+                    </form>
+
+                </li>
+                <li>
+                    <input type="checkbox" ng-model="checked">
+                    <a href class="dropdown-toggle" ng-click="checked = !checked">
+                        test
+                    </a>
+                </li>
+                <li>
+                    <input type="checkbox" ng-model="checked">
+                    <a href class="dropdown-toggle" ng-click="checked = !checked">
+                        test
+                    </a>
+                </li>
+                <li>
+                    <input type="checkbox" ng-model="checked">
+                    <a href class="dropdown-toggle" ng-click="checked = !checked">
+                        test
+                    </a>
+                </li>
+                <li>
+                    <input type="checkbox" ng-model="checked">
+                    <a href class="dropdown-toggle" ng-click="checked = !checked">
+                        test
+                    </a>
+                </li>
+            </ul>
+        -->
+
+        </nav>
+    </div>
+
+    <div>Making the Web Beautiful!</div>
+
+</body>
+
+</html>
