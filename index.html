@@ -3,54 +3,66 @@
 <head>
     <!-- Add Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+
+    <!-- Add Reset Sheet -->
     <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Add Main style sheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Add Color Theme style sheet - swap color-black.css to color.css for color test  -->
     <link rel="stylesheet" href="css/color-black.css">
+
+    <!-- Add Tooltip style sheet -->
     <link rel="stylesheet" href="css/tooltip.css">
 
+    <!-- Add Main JavaScript file -->
     <script type="text/javascript" src="js/scripts.js" defer></script>
+
+    <!-- Decorate Page -->
     <title>Bark It!</title>
     <link rel="icon" href="media/bear-left.png">
 
 </head>
 
 <body>
-    <!-- Add Grid -->
-
+    <!-- Main Top Container -->
     <div class="container container-top">
+
+        <!-- Top Nav-->
         <nav>
+
+            <!-- Hamburger Shows up on mobile-->
             <input type="checkbox" id="nav-toggle">
             <label for="nav-toggle" class="burger-menu">
                 <img class="hamburger" src="media/menu.png" alt="">
             </label>
-            <div class="left-menu menu">
-                <img class="bear active bear-left" src="media/bear-left.png" alt="">
 
-                <a href="#">Bark?</a>
-                <a href="#">Bark!</a>
-                <a href="#">Bark..</a>
+            <!--Left Menu of Nav-->
+            <div class="left-menu menu">
+                <a href="index.html"><img class="bear active bear-left" src="media/bear-left.png" alt="">
+                </a>
+                <a>Bark?</a>
+                <a>Bark...</a>
+                <a>Bark!</a>
             </div>
 
-
+            <!--Center Menu of Nav-->
             <a href="index.html" class="logo">BARK IT
 
-
                 <img class="bear active" id="bear-mid" src="media/bear.png" alt="">
-
             </a>
 
-
+            <!--Right Menu of Nav-->
             <div class="right-menu menu">
                 <span class="tooltiptext" id="tooltip-bark">BARK!</span>
-
+                <!--Interactive Right Logo - Click on it-->
                 <img class="bear right active" id="bear-right" src="media/bear-right.png" alt="">
-                <!--   <a href="#">About</a> -->
             </div>
-
         </nav>
     </div>
 
-    <!-- Item list -->
+    <!-- New Item -->
     <div class="container tasks top">
 
         <nav>
@@ -69,12 +81,10 @@
         </form>
 
         <hr>
-        <!--Current Barks-->
 
-
-
-        <label class="main-label">Current Barks     
-                <img class="bear img-list" id="bear-mid" src="media/list-current.png" alt="">
+    <!-- Current Items -->
+        <label class="main-label">Current Barks
+            <img class="bear img-list" id="bear-mid" src="media/list-current.png" alt="">
         </label>
 
 
@@ -85,24 +95,16 @@
 
         </div>
         <hr>
-        <!--Completed Barks-->
 
+        <!--Completed Items-->
         <label class="main-label completed-label">Completed Barks
             <img class="bear img-list" id="bear-mid" src="media/list-done.png" alt="">
-
         </label>
-
-
         <div id="checkboxes">
             <ul id="complete-list">
-              
-
             </ul>
-
         </div>
-        <!-- end of Compelted Barks-->
     </div>
-
 
 </body>
 

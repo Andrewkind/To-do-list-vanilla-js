@@ -5,6 +5,12 @@ https://color.adobe.com/Glowing-Blue-color-theme-12815858
 
 Nav bar tips from:
 https://modern-css.com/responsive-navbar-with-css-grid.html
+
+Additional color theme style in:
+color-black.css (switch to color.css for color test (work in progress))
+
+Uses Reset style! reset.css
+Uses tooltips style tooltip.css
 */
 
 body {
@@ -30,6 +36,7 @@ img {
 
 .bear-left {
     padding-left: 10px;
+    cursor: pointer;
 }
 
 form {
@@ -49,6 +56,11 @@ form {
     border-top: 6px solid;
 }
 
+.label-date {
+    font-size: 14px;
+
+}
+
 
 .right {
     float: right;
@@ -56,8 +68,6 @@ form {
 }
 
 /* Horizontal Center the List Items */
-
-
 nav {
     max-width: 1720px;
     display: grid;
@@ -137,6 +147,8 @@ nav a:hover {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2.5px;
+    cursor: default;
+
 }
 
 .right-menu a {
@@ -321,7 +333,15 @@ form {
 @media only screen and (max-width: 1025px) {
 
     label {
-        font-size: 28px;
+        font-size: 32px;
+    }
+    li input[type='checkbox'] {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bear-small {
+        height: 36px;
     }
 
     .burger-menu {
@@ -530,8 +550,6 @@ input[type='checkbox']:checked {
     margin-left: 140px;
     margin-right: 140px;
 }
-
-
 
 /* source: https://css-tricks.com/examples/hrs/
 Gradient transparent - color - transparent */
