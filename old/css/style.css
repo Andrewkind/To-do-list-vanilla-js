@@ -126,6 +126,10 @@ nav a:hover {
     opacity: .7;
 }
 
+ul {
+    text-align: center;
+}
+
 .left-menu a {
     padding: 10px 0;
     margin-left: 15px;
@@ -242,23 +246,16 @@ input[type=text] {
     box-sizing: border-box;
 }
 
-.label, h1, label, li {
+.label, h1, label {
     padding: 10px 0;
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 3.5px;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
  /*   transition: 0.3s all ease-in-out; */
-}
-
-li {
-    line-height: 120%;
-}
-
-.current-label {
-    font-size: 38px;
 }
 
 /*
@@ -268,7 +265,6 @@ source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
 
 input[type="checkbox"] {
-    vertical-align: middle;
 
     border: solid white;
     border-width: 0 3px 3px 0;
@@ -328,10 +324,13 @@ form {
     }
     input {
        /* height: 100px; */
-      
+        font-size: 34px;
     }
 
-
+    .label-checkbox {
+        font-size: 34px;
+        line-height: 2;
+    }
     .hamburger {
         width: 100px;
     }
@@ -479,24 +478,7 @@ form {
     display: grid;
 }
 
-li label{
+.label-checkbox {
     cursor: pointer;
 
-}
-
-
-input[type='checkbox'] {
-    width:30px;
-    height:30px;
-    background:white;
-    border-radius:5px;
-    border:2px solid #555;
-}
-input[type='checkbox']:checked {
-    background: #abd;
-}
-
-#checkboxes {
-    margin-left: 20px;
-    margin-right: 20px;
 }

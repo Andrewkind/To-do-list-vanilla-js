@@ -40,8 +40,8 @@ function earFlickAnimation() {
         setTimeout(() => {
             dog.src = "media/bear.png";
 
-        }, 100);
-    }, 5500);
+        }, 50);
+    }, 4000);
 }
 
 function doggoClicked() {
