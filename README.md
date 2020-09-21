@@ -7,3 +7,5 @@ JavaScript DOM manipulation
 Doggos
 
 https://andrewkind.github.io/To-do-list-vanilla-js/
+
+![Bark it](/barkit.png)
